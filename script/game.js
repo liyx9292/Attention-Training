@@ -1,7 +1,7 @@
 function game(){
     var aTd=document.getElementsByTagName('td');
     var oBtn = document.getElementById('btn1');
-    
+
 
     function randomNum(min,max){
         range = max - min;
@@ -23,7 +23,7 @@ function game(){
                 showNum();
             }
         }else{
-            for(let i=0;i<aTd.length; i++){
+            for(var i=0;i<aTd.length; i++){
                 aTd[i].innerHTML = num[i];
             }
             return;
@@ -33,8 +33,6 @@ function game(){
     oBtn.onclick=function(){
         showNum();
         num =[];
-        
-
         
         for(let i = 0; i<aTd.length ; i++){
             aTd[i].addEventListener('click',function(){
@@ -68,8 +66,6 @@ function game(){
         }
     };
 
-
-    
 };
 
    
