@@ -3,8 +3,8 @@ function addLoadEvent(func){
     if(typeof window.onload!='function'){
         window.onload = func;
     }else{
-        widow.onload=function(){
-            oldonload();
+        window.onload=function(){
+            oldonLoad();
             func();
         }
     }
